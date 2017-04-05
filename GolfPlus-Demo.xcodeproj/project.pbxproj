@@ -12,6 +12,12 @@
 		C8CEC56B1E9508FE00F2F1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEC5691E9508FE00F2F1BB /* Main.storyboard */; };
 		C8CEC56D1E9508FE00F2F1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CEC56C1E9508FE00F2F1BB /* Assets.xcassets */; };
 		C8CEC5701E9508FE00F2F1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEC56E1E9508FE00F2F1BB /* LaunchScreen.storyboard */; };
+		C8CEC5821E95092C00F2F1BB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC57A1E95092C00F2F1BB /* MMDrawerBarButtonItem.m */; };
+		C8CEC5831E95092C00F2F1BB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC57C1E95092C00F2F1BB /* MMDrawerController.m */; };
+		C8CEC5841E95092C00F2F1BB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC57F1E95092C00F2F1BB /* MMDrawerVisualState.m */; };
+		C8CEC5851E95092C00F2F1BB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC5811E95092C00F2F1BB /* UIViewController+MMDrawerController.m */; };
+		C8CEC5871E950AB200F2F1BB /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC5861E950AB200F2F1BB /* LeftSideViewController.swift */; };
+		C8CEC5891E950B6D00F2F1BB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CEC5881E950B6D00F2F1BB /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,18 @@
 		C8CEC56C1E9508FE00F2F1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CEC56F1E9508FE00F2F1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8CEC5711E9508FE00F2F1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CEC5781E95092B00F2F1BB /* GolfPlus-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GolfPlus-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8CEC5791E95092C00F2F1BB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		C8CEC57A1E95092C00F2F1BB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		C8CEC57B1E95092C00F2F1BB /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		C8CEC57C1E95092C00F2F1BB /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		C8CEC57D1E95092C00F2F1BB /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		C8CEC57E1E95092C00F2F1BB /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		C8CEC57F1E95092C00F2F1BB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		C8CEC5801E95092C00F2F1BB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		C8CEC5811E95092C00F2F1BB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		C8CEC5861E950AB200F2F1BB /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		C8CEC5881E950B6D00F2F1BB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,34 @@
 		C8CEC5641E9508FE00F2F1BB /* GolfPlus-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C8CEC5771E95090900F2F1BB /* MMDrawerController */,
 				C8CEC5651E9508FE00F2F1BB /* AppDelegate.swift */,
 				C8CEC5671E9508FE00F2F1BB /* ViewController.swift */,
+				C8CEC5861E950AB200F2F1BB /* LeftSideViewController.swift */,
+				C8CEC5881E950B6D00F2F1BB /* CustomTableViewCell.swift */,
 				C8CEC5691E9508FE00F2F1BB /* Main.storyboard */,
 				C8CEC56C1E9508FE00F2F1BB /* Assets.xcassets */,
 				C8CEC56E1E9508FE00F2F1BB /* LaunchScreen.storyboard */,
 				C8CEC5711E9508FE00F2F1BB /* Info.plist */,
 			);
 			path = "GolfPlus-Demo";
+			sourceTree = "<group>";
+		};
+		C8CEC5771E95090900F2F1BB /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				C8CEC5791E95092C00F2F1BB /* MMDrawerBarButtonItem.h */,
+				C8CEC57A1E95092C00F2F1BB /* MMDrawerBarButtonItem.m */,
+				C8CEC57B1E95092C00F2F1BB /* MMDrawerController.h */,
+				C8CEC57C1E95092C00F2F1BB /* MMDrawerController.m */,
+				C8CEC57D1E95092C00F2F1BB /* MMDrawerController+Subclass.h */,
+				C8CEC57E1E95092C00F2F1BB /* MMDrawerVisualState.h */,
+				C8CEC57F1E95092C00F2F1BB /* MMDrawerVisualState.m */,
+				C8CEC5801E95092C00F2F1BB /* UIViewController+MMDrawerController.h */,
+				C8CEC5811E95092C00F2F1BB /* UIViewController+MMDrawerController.m */,
+				C8CEC5781E95092B00F2F1BB /* GolfPlus-Demo-Bridging-Header.h */,
+			);
+			name = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +135,7 @@
 					C8CEC5611E9508FE00F2F1BB = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 3D7L2EVLCV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CEC5841E95092C00F2F1BB /* MMDrawerVisualState.m in Sources */,
+				C8CEC5871E950AB200F2F1BB /* LeftSideViewController.swift in Sources */,
+				C8CEC5891E950B6D00F2F1BB /* CustomTableViewCell.swift in Sources */,
 				C8CEC5681E9508FE00F2F1BB /* ViewController.swift in Sources */,
+				C8CEC5821E95092C00F2F1BB /* MMDrawerBarButtonItem.m in Sources */,
+				C8CEC5851E95092C00F2F1BB /* UIViewController+MMDrawerController.m in Sources */,
+				C8CEC5831E95092C00F2F1BB /* MMDrawerController.m in Sources */,
 				C8CEC5661E9508FE00F2F1BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +308,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3D7L2EVLCV;
 				INFOPLIST_FILE = "GolfPlus-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.GolfPlus-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GolfPlus-Demo/GolfPlus-Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +324,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3D7L2EVLCV;
 				INFOPLIST_FILE = "GolfPlus-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.GolfPlus-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GolfPlus-Demo/GolfPlus-Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
